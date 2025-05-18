@@ -54,18 +54,18 @@ export default function Footer() {
               title="Our phone"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              850-123-5021
+              +974 30603629
             </a>
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">Email:</p>
             <a
-              href="mailto:info@lorem.mail"
+              href="mailto:saweranursing@gmail.com"
               aria-label="Our email"
               title="Our email"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              info@lorem.mail
+              saweranursing@gmail.com
             </a>
           </div>
           <div class="flex">
@@ -78,7 +78,7 @@ export default function Footer() {
               title="Our address"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              312 Lovely Street, NY
+              Muaither - Flat 2, bldg 6, Street 652, Zone 53
             </a>
           </div>
         </div>

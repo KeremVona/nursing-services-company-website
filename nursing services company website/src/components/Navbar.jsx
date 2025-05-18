@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import Logo from "../assets/images/Sawera.jpg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
       <div className="flex-1 flex justify-between items-center">
-        <a href="#" className="text-xl font-semibold text-gray-900">
-          Al Jazeera Nursing
+        <a href="#" className="text-xl font-semibold text-gray-900 flex">
+          <img src={Logo} alt="" className="max-h-15" /> <span className="mt-4 ml-2">Al Jazeera Nursing</span>
         </a>
         {/* Mobile menu toggle button */}
         <button

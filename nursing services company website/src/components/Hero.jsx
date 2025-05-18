@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="container mx-auto h-full sm:p-10">
             <nav className="flex px-4 justify-between items-center">
               <div class="text-4xl font-bold">
-                Al Jazeera<span class="text-green-700"> Nursing</span>
+                Al Jazeera<span class="text-[#A120A4]"> Nursing</span>
               </div>
               <div>
                 <img
@@ -21,17 +21,17 @@ export default function Hero() {
             <header className="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
               <div className="w-full">
                 <h1 className="text-4xl lg:text-6xl font-bold">
-                  Reliable <span className="text-green-700">Nursing Staff</span>{" "}
+                  Reliable <span className="text-[#A120A4]">Nursing Staff</span>{" "}
                   for Every Need
                 </h1>
-                <div className="w-20 h-2 bg-green-700 my-4"></div>
+                <div className="w-20 h-2 bg-[#A120A4] my-4"></div>
                 <p className="text-xl mb-10">
                   We provide qualified, licensed nursing professionals to
                   hospitals, clinics, schools, homecare, and more. Whether you
                   need full-time, part-time, or temporary staff, we deliver
                   compassionate care and clinical excellence.
                 </p>
-                <button className="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow">
+                <button className="bg-[#3DCC1D] text-white text-2xl font-medium px-4 py-2 rounded shadow">
                   Get in Touch
                 </button>
               </div>

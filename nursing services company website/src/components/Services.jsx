@@ -15,7 +15,7 @@ export default function Services() {
             Our Services
           </p>
           <h2 className="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-            Qualified Nursing Staff You Can Trust
+            <span className="text-[#A120A4]">Qualified</span> Nursing Staff You Can Trust
           </h2>
           <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">
             <li className="rounded-xl bg-white px-6 py-8 shadow-sm">
