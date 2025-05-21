@@ -1,4 +1,5 @@
 import React from "react";
+import img1 from "../assets/images/1111.jpg";
 
 export default function Hero() {
   return (
@@ -7,8 +8,8 @@ export default function Hero() {
         <div className="w-full sm:w-8/12 mb-10">
           <div className="container mx-auto h-full sm:p-10">
             <nav className="flex px-4 justify-between items-center">
-              <div class="text-4xl font-bold">
-                Al Jazeera<span class="text-[#A120A4]"> Nursing</span>
+              <div class="text-4xl lg:text-6xl font-bold">
+                Sawera<span class="text-[#A120A4]"> Nursing </span>Services
               </div>
               <div>
                 <img
@@ -39,9 +40,9 @@ export default function Hero() {
           </div>
         </div>
         <img
-          src="https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-          alt="Leafs"
-          className="w-full h-48 object-cover sm:h-screen sm:w-4/12"
+          src={img1}
+          alt=""
+          className="w-full sm:w-4/12 h-64 sm:h-screen object-cover rounded-2xl"
         />
       </div>
     </>

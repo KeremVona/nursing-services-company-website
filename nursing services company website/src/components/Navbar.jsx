@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import Logo from "../assets/images/Sawera.jpg";
 
 export default function Navbar() {
@@ -7,9 +8,9 @@ export default function Navbar() {
   return (
     <header className="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
       <div className="flex-1 flex justify-between items-center">
-        <a href="#" className="text-xl font-semibold text-gray-900 flex">
-          <img src={Logo} alt="" className="max-h-15" /> <span className="mt-4 ml-2">Al Jazeera Nursing</span>
-        </a>
+        <Link to="/nursing-services-company-website" className="text-xl font-semibold text-gray-900 flex">
+          <img src={Logo} alt="" className="max-h-15" /> <span className="mt-4 ml-2">Sawera Nursing Services</span>
+        </Link>
         {/* Mobile menu toggle button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -36,19 +37,19 @@ export default function Navbar() {
         <nav>
           <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
             <li>
-              <a className="md:p-4 py-3 px-0 block" href="#about">
+              <Link to="/nursing-services-company-website/about-us" className="md:p-4 py-3 px-0 block" href="#about">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-3 px-0 block" href="#services">
+              <Link to="/nursing-services-company-website/services" className="md:p-4 py-3 px-0 block" href="#services">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-3 px-0 block" href="#contact">
+              <Link to="/nursing-services-company-website/contact" className="md:p-4 py-3 px-0 block" href="#contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

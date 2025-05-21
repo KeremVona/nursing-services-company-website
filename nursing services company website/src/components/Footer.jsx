@@ -27,7 +27,7 @@ export default function Footer() {
               <rect x="14" y="11" width="7" height="12"></rect>
             </svg>
             <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-              Al Jazeera Nursing Services
+              Sawera Nursing Services
             </span>
           </a>
           <div class="mt-6 lg:max-w-sm">
@@ -121,7 +121,7 @@ export default function Footer() {
       </div>
       <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p class="text-sm text-gray-600">
-          © Copyright 2025 Al Jazeera Nursing Services. All rights reserved.
+          © Copyright 2025 Sawera Nursing Services. All rights reserved.
         </p>
         <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
