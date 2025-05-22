@@ -33,7 +33,7 @@ export default function Footer() {
           <div class="mt-6 lg:max-w-sm">
             <p class="text-sm text-gray-800">
               We specialize in providing highly qualified and licensed nursing
-              staff across Qatar.
+              staff across Doha, Qatar.
             </p>
             <p class="mt-4 text-sm text-gray-800">
               From hospitals and clinics to schools and homecare, we are
@@ -78,7 +78,7 @@ export default function Footer() {
               title="Our address"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              Muaither - Flat 2, bldg 6, Street 652, Zone 53
+              Muaither - Flat 2, Bldg 6, Street 652, Zone 53, Doha, Qatar
             </a>
           </div>
         </div>

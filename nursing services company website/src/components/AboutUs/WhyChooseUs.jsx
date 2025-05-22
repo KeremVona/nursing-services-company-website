@@ -1,12 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import img1 from "../../assets/images/11.jpg";
 import img2 from "../../assets/images/22.jpg";
 import img3 from "../../assets/images/33.jpg";
 import img4 from "../../assets/images/44.jpg";
 
-export default function WhyChooseUs() {
+const WhyChooseUs = forwardRef((props, ref) => {
   return (
-    <div className="text-center p-8">
+    <div ref={ref} className="text-center p-8" id="why-choose-us-container">
       <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
         Why Choose Us?
       </h2>
@@ -100,4 +100,6 @@ export default function WhyChooseUs() {
       </div>
     </div>
   );
-}
+});
+
+export default WhyChooseUs;

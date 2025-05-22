@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import img1 from "../../assets/images/111.jpg";
 
-export default function AboutUsComponent() {
+export default function AboutUsComponent({ onScroll }) {
   return (
     <section className="bg-gray-100">
       <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -19,7 +19,7 @@ export default function AboutUsComponent() {
             </p>
             <div className="mt-8">
               <a
-                href="#"
+                href="#why-choose-us-container" onClick={onScroll}
                 className="text-blue-500 hover:text-blue-600 font-medium"
               >
                 Learn more about us <span className="ml-2">&#8594;</span>
