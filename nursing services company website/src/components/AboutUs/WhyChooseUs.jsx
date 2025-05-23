@@ -12,7 +12,7 @@ const WhyChooseUs = forwardRef((props, ref) => {
       </h2>
 
       {/* Feature 1 */}
-      <div className="flex flex-wrap items-center mt-20 text-left text-center">
+      <div className="flex flex-wrap items-center mt-20 text-center md:text-left">
         <div className="w-full md:w-3/5 lg:w-1/2 px-4">
           <img
             src={img1}
@@ -34,7 +34,7 @@ const WhyChooseUs = forwardRef((props, ref) => {
       </div>
 
       {/* Feature 2 */}
-      <div className="flex flex-wrap items-center mt-20 text-left text-center">
+      <div className="flex flex-wrap items-center mt-20 text-center md:text-left">
         <div className="w-full md:w-3/5 lg:w-1/2 px-4">
           <img
             src={img2}
@@ -56,7 +56,7 @@ const WhyChooseUs = forwardRef((props, ref) => {
       </div>
 
       {/* Feature 3 */}
-      <div className="flex flex-wrap items-center mt-20 text-left text-center">
+      <div className="flex flex-wrap items-center mt-20 text-center md:text-left">
         <div className="w-full md:w-3/5 lg:w-1/2 px-4">
           <img
             src={img3}
@@ -78,7 +78,7 @@ const WhyChooseUs = forwardRef((props, ref) => {
       </div>
 
       {/* Feature 4 */}
-      <div className="flex flex-wrap items-center mt-20 text-left text-center">
+      <div className="flex flex-wrap items-center mt-20 text-center md:text-left">
         <div className="w-full md:w-3/5 lg:w-1/2 px-4">
           <img
             src={img4}
