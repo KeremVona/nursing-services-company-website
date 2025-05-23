@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
+// 53af1a39-c7fb-4c0c-8755-3d528eb7ed96
 export default function Contact() {
+  const [result, setResult] = useState("");
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "53af1a39-c7fb-4c0c-8755-3d528eb7ed96");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div className="bg-gray-50" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
@@ -35,7 +59,9 @@ export default function Contact() {
                 d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
               />
             </svg>
-            <span>Muaither - Flat 2, Bldg 6, Street 652, Zone 53, Doha, Qatar</span>
+            <span>
+              Muaither - Flat 2, Bldg 6, Street 652, Zone 53, Doha, Qatar
+            </span>
           </div>
 
           <div className="flex items-center mt-2 space-x-2 text-gray-700">
@@ -53,9 +79,7 @@ export default function Contact() {
                 d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
               />
             </svg>
-            <a href="mailto:saweranursing@gmail.com">
-              saweranursing@gmail.com
-            </a>
+            <a href="mailto:saweranursing@gmail.com">saweranursing@gmail.com</a>
           </div>
 
           <div className="flex items-center mt-2 space-x-2 text-gray-700">
@@ -79,7 +103,7 @@ export default function Contact() {
 
         {/* Contact Form */}
         <div>
-          <form>
+          <form onSubmit={onSubmit}>
             <input
               type="checkbox"
               name="botcheck"
@@ -122,6 +146,7 @@ export default function Contact() {
               Send Message
             </button>
           </form>
+          <span>{result}</span>
         </div>
       </div>
     </div>
