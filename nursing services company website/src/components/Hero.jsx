@@ -8,15 +8,8 @@ export default function Hero() {
         <div className="w-full sm:w-8/12 mb-10">
           <div className="container mx-auto h-full sm:p-10">
             <nav className="flex px-4 justify-between items-center">
-              <div class="text-4xl lg:text-6xl font-bold">
-                Sawera<span class="text-[#A120A4]"> Nursing </span>Services
-              </div>
-              <div>
-                <img
-                  src="https://image.flaticon.com/icons/svg/497/497348.svg"
-                  alt=""
-                  className="w-8"
-                />
+              <div className="text-4xl lg:text-6xl font-bold">
+                Sawera<span className="text-[#A120A4]"> Nursing </span>Services
               </div>
             </nav>
             <header className="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
