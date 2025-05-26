@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import img1 from "../../assets/images/11.jpg";
+import img1 from "../../assets/images/Untitled design (1).png";
 import img2 from "../../assets/images/22.jpg";
 import img3 from "../../assets/images/33.jpg";
 import img4 from "../../assets/images/44.jpg";

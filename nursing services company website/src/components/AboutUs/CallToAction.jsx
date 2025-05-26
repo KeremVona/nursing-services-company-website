@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function CallToAction() {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <section className="mt-12 lg:mt-24">
       <div className="bg-[#A120A4] text-white -skew-y-1">
@@ -19,7 +43,7 @@ export default function CallToAction() {
 
               {/* Search Box */}
               <div>
-                <form>
+                <form onSubmit={onSubmit}>
                   <input
                     type="checkbox"
                     name="botcheck"
@@ -32,6 +56,7 @@ export default function CallToAction() {
                       placeholder="Full Name"
                       name="name"
                       autoComplete="off"
+                      required
                       className="w-full px-4 py-3 border-2 placeholder:text-gray-500 text-gray-900 rounded-md outline-none bg-white focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
                     />
                   </div>
@@ -45,6 +70,7 @@ export default function CallToAction() {
                       placeholder="Email Address"
                       name="email"
                       autoComplete="off"
+                      required
                       className="w-full px-4 py-3 border-2 placeholder:text-gray-500 text-gray-900 rounded-md outline-none bg-white focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
                     />
                   </div>
@@ -52,6 +78,7 @@ export default function CallToAction() {
                     <textarea
                       placeholder="Your Message"
                       name="message"
+                      required
                       className="w-full px-4 py-3 border-2 placeholder:text-gray-500 text-gray-900 bg-white rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
                     ></textarea>
                   </div>
